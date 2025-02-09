@@ -12,7 +12,6 @@ function App() {
       <Routes>
         <Route element={<MainLayout />}>
           <Route path="/" element={<Home />} />
-          <Route path="/contact" element={<Contact />} />
           {/* <Route path="/about" element={<About />} /> */}
         </Route>
         <Route path="*" element={<NotFoundPage />} />
