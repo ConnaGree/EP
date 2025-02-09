@@ -1,6 +1,5 @@
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import "./index.css";
-import Contact from "./pages/contact/Contact";
 
 import MainLayout from "./components/layout/main-layout";
 import NotFoundPage from "./pages/404/not-found";
