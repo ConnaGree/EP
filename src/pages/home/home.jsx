@@ -1,4 +1,20 @@
+import { Contact } from "lucide-react";
+import About from "../../components/about/about";
+import Hero from "../../components/hero/hero";
+import Projects from "../../components/projects/projects";
+import Marquee from "../../components/ui/marquee";
+import ContactForm from "../../components/contact/contact";
+
 const Home = () => {
-  return <div className="h-[100vh] bg-[#F2EDED]">Home</div>;
-}
-export default Home
+  return (
+    <div>
+      <Hero />
+      <Marquee />
+      <About />
+      <Projects />
+      <ContactForm />
+    </div>
+  );
+};
+
+export default Home;
