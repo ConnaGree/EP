@@ -1,5 +1,6 @@
 import { TypeAnimation } from "react-type-animation";
 import { cv } from "../../assets";
+import { Link } from "react-scroll";
 
 const Home = () => {
   return (
@@ -32,9 +33,17 @@ const Home = () => {
       {/* Buttons */}
       <div className="mt-6 flex gap-4">
         {/* Glassmorphic Contact Me Button */}
-        <button className="px-6 py-3 rounded-lg text-white bg-white/10 backdrop-blur-md border border-white/20 hover:bg-white/20 transition-all">
-          Contact Me
-        </button>
+        <Link
+          to="contact" // The ID of the section you want to scroll to
+          smooth={true} // Enables smooth scrolling
+          duration={500} // Time in ms for the scroll animation
+          spy={true} // Highlights the active section
+          offset={-50} // Offset to adjust the scroll position (useful for fixed headers)
+        >
+          <button className="px-6 py-3 rounded-lg text-white bg-white/10 backdrop-blur-md border border-white/20 hover:bg-white/20 transition-all">
+            <span className="">Contact Me</span>
+          </button>
+        </Link>
 
         {/* Ghost Download CV Button */}
         <a
