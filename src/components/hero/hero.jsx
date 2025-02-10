@@ -1,4 +1,5 @@
 import { TypeAnimation } from "react-type-animation";
+import { cv } from "../../assets";
 
 const Home = () => {
   return (
@@ -36,9 +37,14 @@ const Home = () => {
         </button>
 
         {/* Ghost Download CV Button */}
-        <button className="px-6 py-3 rounded-lg border-2 border-[#FF891D] text-[#FF891D] hover:bg-orange-500 hover:text-white transition-all">
+        <a
+          href={cv}
+          download="cv.pdf"
+          role="button"
+          className="px-6 py-3 rounded-lg border-2 border-[#FF891D] text-[#FF891D] hover:bg-orange-500 hover:text-white transition-all"
+        >
           Download CV
-        </button>
+        </a>
       </div>
     </div>
   );
