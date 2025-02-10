@@ -36,10 +36,10 @@ const ContactForm = () => {
   return (
     <div
       id="contact"
-      className="min-h-screen flex flex-col items-center justify-center px-4 py-12 text-white"
+      className="min-h-screen flex  flex-col items-center justify-center px-4 py-12 text-white"
     >
       <h1 className="my-6 text-4xl font-semibold text-gray-300">Contact Me</h1>
-      <div className="bg-gray-800 p-8 rounded-lg shadow-xl max-w-lg w-full">
+      <div className="bg-gray-800 p-8 border-white/20 border-[1px] rounded-lg shadow-xl max-w-lg w-full">
         <form onSubmit={handleSubmit}>
           <div className="mb-6">
             <label
