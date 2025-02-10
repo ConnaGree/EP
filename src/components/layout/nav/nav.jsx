@@ -30,7 +30,7 @@ const Nav = () => {
       } backdrop-blur-lg bg-white/5 border-b-[1px] border-white/20`}
     >
       <div className="relative flex items-center justify-center px-8">
-        <Link className="text-[1.5rem] py-3 px-5" to={"/"}>
+        <Link className="text-[1.5rem] py-1 px-5" to={"/"}>
           <span className="text-[#FF891D] font-[800]">{`{ebenezer_}`}</span>
         </Link>
 

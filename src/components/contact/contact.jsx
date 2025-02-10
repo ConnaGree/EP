@@ -1,4 +1,12 @@
 import React, { useState } from "react";
+import {
+  Github,
+  Linkedin,
+  Instagram,
+  Twitter,
+  Mail,
+  Phone,
+} from "lucide-react";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -17,9 +25,7 @@ const ContactForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission logic here
     console.log("Form submitted:", formData);
-    // Reset the form after submission
     setFormData({
       name: "",
       email: "",
@@ -28,7 +34,10 @@ const ContactForm = () => {
   };
 
   return (
-    <div id="contact" className="min-h-screen flex flex-col items-center justify-center px-4 py-12 text-white">
+    <div
+      id="contact"
+      className="min-h-screen flex flex-col items-center justify-center px-4 py-12 text-white"
+    >
       <h1 className="my-6 text-4xl font-semibold text-gray-300">Contact Me</h1>
       <div className="bg-gray-800 p-8 rounded-lg shadow-xl max-w-lg w-full">
         <form onSubmit={handleSubmit}>
@@ -96,6 +105,53 @@ const ContactForm = () => {
             Send Message
           </button>
         </form>
+
+        <div className="flex justify-center mt-6 space-x-6">
+          <a
+            href="https://github.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-400 hover:text-white transition"
+          >
+            <Github size={24} />
+          </a>
+          <a
+            href="https://www.linkedin.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-400 hover:text-white transition"
+          >
+            <Linkedin size={24} />
+          </a>
+          <a
+            href="https://www.instagram.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-400 hover:text-white transition"
+          >
+            <Instagram size={24} />
+          </a>
+          <a
+            href="https://twitter.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-400 hover:text-white transition"
+          >
+            <Twitter size={24} />
+          </a>
+          <a
+            href="mailto:your.email@example.com"
+            className="text-gray-400 hover:text-white transition"
+          >
+            <Mail size={24} />
+          </a>
+          <a
+            href="tel:+1234567890"
+            className="text-gray-400 hover:text-white transition"
+          >
+            <Phone size={24} />
+          </a>
+        </div>
       </div>
     </div>
   );
